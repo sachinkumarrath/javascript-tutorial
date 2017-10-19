@@ -1,6 +1,6 @@
 {
   "name": "javascript-tutorial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "to check all the features of javascript including es6, node",
   "main": "src/index.js",
   "scripts": {
