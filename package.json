@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sachinkumarrath/javascript-tutorial.git"
+  },
   "author": "sachin rath",
   "license": "ISC",
   "devDependencies": {
