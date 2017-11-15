@@ -25,6 +25,8 @@ let averageCalculator = function (marks) {
 };
 
 // returns an object when exports used
-exports.consoleTest = consoleTestWithPrepend;
+// exports.consoleTest = consoleTestWithPrepend;
 
+// in case of require can be fetched by using dot.
+// var exportTest = require("./exports"); and then exportTest.consoleTestWithPrepend
 export {consoleTestWithPrepend, gradeCalculator, averageCalculator};
