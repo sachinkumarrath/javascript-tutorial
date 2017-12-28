@@ -19,3 +19,12 @@ var car4 = new Car("Toyota", "Corolla", 2017);
 console.log(car1);
 console.log(car1.requiredRegistration());
 console.log(car1.getCarName());
+
+var objArr = [];
+
+for (var count = 0; count < 10; count++) {
+    // objArr.push(new Car("Honda", "Civic", 2016));
+    objArr.push(Object.create(Car.prototype, {make:"Honda", model:"Civic", year:2016}));
+}
+
+console.log(objArr);

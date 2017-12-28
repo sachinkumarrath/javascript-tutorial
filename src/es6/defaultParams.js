@@ -9,6 +9,7 @@ defaultParamTest("");       // prints " for default param"
 
 // Using named parameters
 let namedParamTest = function (str, {name, age, address}) {
+    console.log("===========================");
     console.log("str : " + str);
     console.log("name : " + name);
     console.log("age : " + age);
@@ -39,6 +40,7 @@ try {
 
 // Using named parameters with default
 let namedParamTestWithDefault = function (str, {name, age, address} = {}) {
+    console.log("===========================");
     console.log("str : " + str);
     console.log("name : " + name);
     console.log("age : " + age);

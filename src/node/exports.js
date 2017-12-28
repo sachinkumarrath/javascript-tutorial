@@ -24,9 +24,22 @@ let averageCalculator = function (marks) {
     return sum/marks.length;
 };
 
+function functionAddA (str) {
+    return "A" + str;
+};
+
+function functionAddB (str) {
+    return "B" + str;
+};
+
+const stringUtils = {
+    functionAddA: functionAddA,
+    functionAddB: functionAddB
+};
+
 // returns an object when exports used
 // exports.consoleTest = consoleTestWithPrepend;
 
 // in case of require can be fetched by using dot.
 // var exportTest = require("./exports"); and then exportTest.consoleTestWithPrepend
-export {consoleTestWithPrepend, gradeCalculator, averageCalculator};
+export {consoleTestWithPrepend, gradeCalculator, averageCalculator, stringUtils};

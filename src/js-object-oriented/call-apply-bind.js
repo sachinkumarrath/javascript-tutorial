@@ -10,7 +10,7 @@ function test1 () {
     }
 
     function Paper(price,productType,size){
-        Product.apply(this,price,productType);
+        Product.apply(this,[price,productType]);
         this.size = size;
     }
 
@@ -21,7 +21,7 @@ function test1 () {
     console.log(paperObj,foodObj);
 }
 
-console.log("\test1");
+console.log("\ntest1");
 test1();
 
 /***************************************************************/
