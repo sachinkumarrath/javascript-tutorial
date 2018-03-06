@@ -1,16 +1,23 @@
 var callback = function (msg) {
     console.log("callback is called from: " + msg);
     return new Promise((resolve, reject) => {
-        console.log("inside callback promise execution for: " + msg);
-        resolve();
+        setTimeout(() => {
+            console.log("inside callback promise execution for: " + msg);
+            resolve();
+        }, 100);
     });
 };
 
 var callback2 = function (msg) {
     console.log("callback is called from: " + msg);
     return new Promise((resolve, reject) => {
-        console.log("inside callback promise execution for: " + msg);
-        resolve();
+        setTimeout(() => {
+            for(let count = 0; count < 9000000000; count++) {
+
+            }
+            console.log("inside callback promise execution for: " + msg);
+            resolve();
+        }, 0);
     });
 };
 

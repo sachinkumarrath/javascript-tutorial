@@ -47,4 +47,24 @@ let namedParamTestWithDefault = function (str, {name, age, address} = {}) {
     console.log("address : " + address);
 };
 
+// Using named parameters with default
+let namedParamTestWithDefault2 = function (str, {name, age, address} = {name:"sachin", age: 31, address: "india"}) {
+    console.log("===========================");
+    console.log("str : " + str);
+    console.log("name : " + name);
+    console.log("age : " + age);
+    console.log("address : " + address);
+};
+
+// Using named parameters with default
+let namedParamTestWithDefault3 = function (str, {name = "sachin", age = 31, address = "india"} = {}) {
+    console.log("===========================");
+    console.log("str : " + str);
+    console.log("name : " + name);
+    console.log("age : " + age);
+    console.log("address : " + address);
+};
+
 namedParamTestWithDefault("test1 with default");
+namedParamTestWithDefault2("test2 with default");
+namedParamTestWithDefault3();

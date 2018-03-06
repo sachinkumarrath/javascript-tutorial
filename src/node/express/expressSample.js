@@ -1,5 +1,5 @@
 import express from "express";
-import {gradeCalculator, averageCalculator} from "./exports";
+import {gradeCalculator, averageCalculator} from "../exports";
 
 let app = express();
 app.get("/", (req, res) => {
